@@ -7,8 +7,10 @@ export default function Hero() {
     return(
         <section className="bg-black text-white py-24 min-h-screen flex items-center snap-start" id="hero">
             <div className="max-w-4xl mx-auto text-center px-4">
-                <h1 className="text-4xl font-bold mb-4"
-                >Hello! This is Minjae, Chung.</h1>
+                <h1 className="text-left text-5xl font-bold mb-4"
+                >Hello!<br />
+                This is<br />
+                Minjae, Chung</h1>
                 
                 <p className="py-10 text-lg mb-6"
                 >Since 2025.05.14, Day { diffInDays } studying Front-end Design</p>
