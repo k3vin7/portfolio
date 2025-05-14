@@ -2,7 +2,7 @@ import profileImage from '../assets/dummy.png'
 
 export default function About() {
     return(
-        <section className="bg-white text-black py-20 min-h-screen" id="about">
+        <section className="bg-white text-black py-20 min-h-screen snap-start" id="about">
             <div>
                 <h2 className="text-3xl font-bold mb-6 text-center"
                 >About Me</h2>

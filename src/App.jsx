@@ -8,9 +8,9 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className="bg-white text-gray-900 scroll-smooth">
+    <div className="bg-white text-gray-900">
       <Header />
-      <main>
+      <main className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
         <Hero />
         <About />
         <Skills />
@@ -19,7 +19,8 @@ function App() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }
+
 
 export default App
