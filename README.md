@@ -46,10 +46,11 @@ Contact: 연락처 및 GitHub 링크
 ---
 
 ## 📦 설치 및 실행 방법
-arduino
-코드 복사
+
+```
 npm install
 npm run dev
+```
 
 ---
 
