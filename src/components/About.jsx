@@ -3,14 +3,11 @@ import profileImage from '../assets/profile.jpg'
 import SailBoat from '../assets/sailboat.png'
 
 export default function About() {
-    const [isHovered, setIsHovered] = useState(false);
-
     return (
         <section
         id="about"
         className="
         relative
-        pt-16
         h-full
         flex flex-col items-center justify-center
         bg-black text-white
@@ -21,10 +18,10 @@ export default function About() {
         >
             {/* 텍스트 영역 */}
             <div className="px-4 mx-auto text-center max-w-4xl">
-                <h1 className="mb-4 text-5xl font-bold">About Me?</h1>
+                <h1 className="mb-4 text-5xl font-bold">Analyze<br/>Insight</h1>
 
                 <p className="py-10 text-lg">
-                    I’m Minjae, a frontend enthusiast exploring interactive design.
+                    거친 파도에도 굴하지 않고 <strong className='bold text-xl'>분석</strong>과 <strong className='bold text-xl'>이해</strong>로 항해하는 프론트엔드 개발자입니다.
                 </p>
 
                 <p className="text-lg mb-6">
@@ -44,7 +41,7 @@ export default function About() {
             '>
                 <img
                     src={SailBoat}
-                    alt='sailboat'
+                    alt='about_background'
                     className='h-[80vh] w-auto'
                 />
             </div>
@@ -61,12 +58,15 @@ export default function About() {
                 transition-all ease-in-out duration-500
                 z-30
                 overflow-hidden
+                group
             '>
                 {/* "Go CHECK" 텍스트 */}
                 <div className='
                     mr-52
                     h-56
                     flex items-center justify-center
+                    group-hover:opacity-0
+                    transition-all duration-300
                 '>
                     <p className='pl-10 font-semibold'>Go<br />CHECK</p>
                 </div>
@@ -81,12 +81,16 @@ export default function About() {
 
                 {/* 이름/학교 설명 박스 */}
                 <div>
-                    <div className='h-56 flex-col items-start justify-start'>
+                    <div className='ml-8 h-56 flex-col items-start justify-start'>
                         <div className='border-l-4 border-gray-300 pl-4 py-2'>
                             <h2>정민재</h2>
                             <p>Min-jae, Chung</p>
                         </div>
                         <div className='border-l-4 border-gray-400 pl-4 py-2'>
+                            <h2>2002.07.26</h2>
+                            <p>26, July, 2002</p>
+                        </div>
+                        <div className='border-l-4 border-gray-500 pl-4 py-2'>
                             <h2>Kyung Hee Univ.</h2>
                             <p>Computer Science and Engineering</p>
                         </div>

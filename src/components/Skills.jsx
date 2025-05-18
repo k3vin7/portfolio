@@ -1,3 +1,4 @@
+import lines from '../assets/ProjectBg.png'
 import ReactIcon from '../assets/react.png'
 import JSIcon from '../assets/javascript.png'
 import CSSIcon from '../assets/css.png'
@@ -18,44 +19,84 @@ export default function Skills() {
 
     return(
         <section className="
+        relative
         h-full
-        py-20 
+        flex flex-col items-center justify-center
         bg-black text-white
-        snap-start"
-        id="skills">
-            <div className="max-w-4xl mx-auto px-4 text-center">
-                <h2 className="text-3xl font-bold mb-10">Stacks</h2>
-                
-                <div className='px-2 text-2xl text-left font-bold border-b-4'>Front-end</div>
-                <div className="py-10 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 justify-center">
-                    {front_end.map((front_end, index)=>(
-                        <div key={index} className="flex flex-col items-center">
-                          <img
-                          src={front_end.icon}
-                          alt={front_end.name}
-                          className='w-24 h-24 mb-2'
-                          />
-                          <p className='py-4 text-xl font-bold'>{front_end.name}</p>
-                        </div>
-                    ))}
-                </div>
-
-                <div className='px-2 text-2xl text-left font-bold border-b-4'>Back-end</div>
-                <div className="py-10 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 justify-center">
-                    {back_end.map((back_end, index)=>(
-                        <div key={index} className="flex flex-col items-center">
-                          <img
-                          src={back_end.icon}
-                          alt={back_end.name}
-                          className='w-24 h-24 mb-2'
-                          />
-                          <p className='py-4 text-xl font-bold'>{back_end.name}</p>
-                        </div>
-                    ))}
-                </div>
-
-
+        overflow-hidden
+        snap-start
+        px-4"
+        id="skills"
+        >
+            <div className='
+            absolute
+            '>
+                <img src={ lines } 
+                alt='projects_background'
+                className='
+                h-[70vh]
+                '/>
             </div>
+            <div className='
+            flex
+            '>
+                {/* 프론트엔드 */}
+                <div className='
+                absolute
+                top-[11vh] left-[21vw]
+                rounded-full
+                h-[25vh] w-[25vh]
+                flex flex-col items-center justify-center
+                bg-black border-white border-4
+                transition-all ease-in-out duration-500
+                transform hover:scale-[2.8]
+                origin-top-right
+                group
+                '>
+                    {/* 기본 텍스트 */}
+                    <div>
+                        <p className='
+                        font-semibold text-2xl
+                        group-hover:opacity-0
+                        transition-all duration-300
+                        '>Front-End</p>
+                    </div>
+                    {/* 프론트엔드 리스트 */}
+                    <div>
+                        
+                    </div>
+                </div>
+
+                {/* 백엔드 */}
+                <div className='
+                absolute
+                bottom-[5vh] left-[32vw]
+                rounded-full
+                h-[20vh] w-[20vh]
+                flex flex-col items-center justify-center
+                bg-black border-white border-4
+                transition-all ease-in-out duration-500
+                transform hover:scale-[2.8]
+                origin-bottom
+                group
+                '>
+                    {/* 기본텍스트 */}
+                    <div>
+                        <p className='
+                        font-semibold text-2xl
+                        group-hover:opacity-0
+                        transition-all duration-300
+                        '>Back-End</p>
+                    </div>
+                    {/* 백엔드 리스트 */}
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+            <div className="max-w-4xl mx-auto px-4 text-center">
+                <h1 className="mb-4 text-5xl font-bold">Stacks</h1>
+            </div> 
         </section>
     )
 }

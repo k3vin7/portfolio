@@ -5,7 +5,7 @@ export default function Hero() {
     const diffInMs = today - startDate;
     const diffInDays = Math.floor(diffInMs / (1000 * 60 * 60 * 24)) + 1;
     return(
-        <section className="bg-black text-white py-24 h-full flex items-center snap-start" id="hero">
+        <section className="bg-black text-white h-full flex items-center snap-start" id="hero">
             <div className="max-w-4xl mx-auto text-center px-4">
                 <h1 className="text-left text-5xl font-bold mb-4"
                 >Hello!<br />
@@ -13,7 +13,7 @@ export default function Hero() {
                 Minjae, Chung</h1>
                 
                 <p className="py-10 text-lg mb-6"
-                >Since 2025.05.14, Day { diffInDays } studying Front-end Design</p>
+                >Since 2025.05.14, Day { diffInDays } studying Front-End Design</p>
 
                 <a herf="#projects"
                 className="inline-block bg-white text-black font-semibold py-3 px-6 rounded-xl hover:bg-gray-200 transition"
