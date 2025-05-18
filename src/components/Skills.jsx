@@ -17,7 +17,12 @@ export default function Skills() {
     ]
 
     return(
-        <section className="min-h-screen py-20 snap-start" id="skills">
+        <section className="
+        h-full
+        py-20 
+        bg-black text-white
+        snap-start"
+        id="skills">
             <div className="max-w-4xl mx-auto px-4 text-center">
                 <h2 className="text-3xl font-bold mb-10">Stacks</h2>
                 

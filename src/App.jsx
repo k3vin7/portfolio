@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="bg-white text-gray-900">
       <Header />
-      <main className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
+      <main className="h-[calc(100vh-64px)] overflow-y-scroll snap-y snap-mandatory scroll-smooth">
         <Hero />
         <About />
         <Skills />
