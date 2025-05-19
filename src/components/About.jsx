@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import profileImage from '../assets/profile.jpg'
 import SailBoat from '../assets/sailboat.png'
+import github from '../assets/github_logo.png'
 
 export default function About() {
     return (
@@ -18,7 +19,7 @@ export default function About() {
         >
             {/* 텍스트 영역 */}
             <div className="px-4 mx-auto text-center max-w-4xl">
-                <h1 className="mb-4 text-5xl font-bold">Analyze<br/>Insight</h1>
+                <h1 className="mb-4 text-5xl font-semibold"><strong className='bold text-6xl'>A</strong>nalyze<br/>& <strong className='bold text-6xl'>I</strong>nsight</h1>
 
                 <p className="py-10 text-lg">
                     거친 파도에도 굴하지 않고 <strong className='bold text-xl'>분석</strong>과 <strong className='bold text-xl'>이해</strong>로 항해하는 프론트엔드 개발자입니다.
@@ -58,8 +59,7 @@ export default function About() {
                 transition-all ease-in-out duration-500
                 z-30
                 overflow-hidden
-                group
-            '>
+                group'>
                 {/* "Go CHECK" 텍스트 */}
                 <div className='
                     mr-52
@@ -68,31 +68,54 @@ export default function About() {
                     group-hover:opacity-0
                     transition-all duration-300
                 '>
-                    <p className='pl-10 font-semibold'>Go<br />CHECK</p>
+                    <p className='pl-10 font-semibold'>Go<br /><strong className='text-xl'>CHECK</strong></p>
                 </div>
+                <div className='
+                flex
+                opacity-0
+                group-hover:opacity-100'>
+                    {/* 프로필 이미지 */}
+                    <div>
+                        <img
+                            src={ profileImage }
+                            alt='profile'
+                            className='w-auto h-56 object-contain rounded-xl border border-gray-300 shadow-sm' />
+                    </div>
 
-                {/* 프로필 이미지 */}
-                <div>
-                    <img
-                        src={profileImage}
-                        alt='profile'
-                        className='w-auto h-56 object-contain rounded-xl border border-gray-300 shadow-sm' />
-                </div>
-
-                {/* 이름/학교 설명 박스 */}
-                <div>
-                    <div className='ml-8 h-56 flex-col items-start justify-start'>
-                        <div className='border-l-4 border-gray-300 pl-4 py-2'>
-                            <h2>정민재</h2>
-                            <p>Min-jae, Chung</p>
+                    {/* 이름/학교 설명 박스 */}
+                    <div className='flex'>
+                        <div className='ml-8 h-56 flex flex-col items-start justify-start'>
+                            <div className='border-l-4 border-gray-300 pl-4 py-2'>
+                                <h3>정민재</h3>
+                                <p>Min-jae, Chung</p>
+                            </div>
+                            <div className='border-l-4 border-gray-400 pl-4 py-2'>
+                                <h3>Computer Science and Engineering</h3>
+                                <p>Kyung Hee Univ.</p>
+                            </div>
                         </div>
-                        <div className='border-l-4 border-gray-400 pl-4 py-2'>
-                            <h2>2002.07.26</h2>
-                            <p>26, July, 2002</p>
-                        </div>
-                        <div className='border-l-4 border-gray-500 pl-4 py-2'>
-                            <h2>Kyung Hee Univ.</h2>
-                            <p>Computer Science and Engineering</p>
+                        <div className='ml-8 h-56 flex flex-col items-start justify-start'>
+                            <div className='border-l-4 border-gray-300 pl-4 py-2'>
+                                <h3>📧 Email</h3>
+                                <p>iammjchung@gmail.com</p>
+                            </div>
+                            <div className='border-l-4 border-gray-400 pl-4 py-2'>
+                                <h3>📞 Phone</h3>
+                                <p>010-9217-9618</p>
+                            </div>
+                            <div className='border-l-4 border-gray-500 pl-4 py-2'>
+                                <div className='flex'>
+                                    <img src={ github } alt='github' className='h-5 w-5 mr-2'/><h3>GitHub</h3>
+                                </div>
+                                <a
+                                    href="https://github.com/k3vin7"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:underline"
+                                    >
+                                    https://github.com/k3vin7
+                                    </a>
+                            </div>
                         </div>
                     </div>
                 </div>
