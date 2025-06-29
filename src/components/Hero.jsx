@@ -15,7 +15,7 @@ export default function Hero() {
                 <p className="py-10 text-lg mb-6"
                 >Since 2025.05.14, Day { diffInDays } studying Front-End Design</p>
 
-                <a herf="#projects"
+                <a href="#projects"
                 className="inline-block bg-white text-black font-semibold py-3 px-6 rounded-xl hover:bg-gray-200 transition"
                 >Wanna See My Project?</a>
             </div>
